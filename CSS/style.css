@@ -1,0 +1,499 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --very-pale-blue: hsl(207, 100%, 98%);
+}
+
+body {
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+header .padding {
+    padding: 4rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+header nav .button {
+    border: 2px solid var(--light-pink);
+    padding: .4rem 1.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    color: var(--light-pink);
+    box-shadow: 0 0 10px hsla(321, 100%, 78%, 0.432);
+    transition: all .2s ease-in;
+}
+
+header nav .button:hover {
+    opacity: 0.7;
+}
+
+header .container .container-inner {
+    padding: 10rem 6rem;
+}
+
+header .container .container-inner .text {
+    text-align: center;
+    color: var(--very-dark-cyan);
+    margin-bottom: 7rem;
+}
+
+header .container .container-inner .text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-bottom: .8rem;
+}
+
+header .container .container-inner .text p {
+    margin: 0 20rem;
+    margin-bottom: 4rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.button-lg {
+    border: 2px solid var(--pink);
+    background-color: var(--pink);
+    padding: 1.3rem 6.5rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 3rem;
+    cursor: pointer;
+    color: var(--very-pale-blue);
+    box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.293);
+    transition: all .2s ease-in;
+    font-size: 1.2rem;
+}
+
+.button-lg:hover {
+    background-color: var(--light-pink);
+    border-color: var(--light-pink);
+}
+
+header .container .container-inner .main-foto {
+    width: 100%;
+    padding: 4rem;
+}
+
+header .container .container-inner .web-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .container .container-inner .web-info .info h1 {
+    font-size: 6rem;
+    color: var(--very-dark-cyan);
+}
+
+header .container .container-inner .web-info .info p {
+    font-size: 1.5rem;
+    color: var(--very-dark-cyan);
+}
+
+header .container .container-inner .web-info .info:last-child p {
+    text-align: center;
+}
+
+/* MAIN SECTION  */
+.bg-bottom-mobile,.bg-top-mobile,.bg-footer-mobile{
+    display: none;
+    width: 100%;
+}
+main,
+main .container {
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+main .container .card {
+    margin-bottom: 15rem;
+    width: 100%;
+}
+
+main .container .card .bg-top {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+main .container .card .bg-bottom {
+    width: 100%;
+}
+
+main .container .card:first-child .card-inner {
+    background-color: #F6FBFF;
+}
+
+main .container .card .card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 8rem;
+}
+
+main .container .card .card-inner .text {
+    width: 520px;
+}
+
+main .container .card .card-inner .text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--very-dark-cyan);
+}
+
+main .container .card:nth-child(2) .card-inner {
+    flex-direction: row-reverse;
+}
+
+main img {
+    width: 500px;
+}
+
+main .container .card:nth-child(3) .card-inner {
+    background-color: #F6FBFF;
+}
+
+main .container .card:nth-child(3){
+    margin-bottom: 10rem;
+}
+
+main .container .floating-card{    
+    text-align: center;
+    height: fit-content;
+}
+
+main .container .floating-card h1{
+    font-family: 'Poppins', sans-serif;
+    color: var(--very-dark-cyan);
+    font-size: 2.5rem;
+}
+
+main .container .floating-card .large{
+    margin-top: 2rem;
+    display: inline-block;
+    width: 26rem;
+}
+
+footer .bg-footer{
+    width: 100%;
+    margin-bottom: -7px;
+}
+
+footer .huddle{
+    background-color: var(--very-dark-cyan);
+    padding: 7rem;
+} 
+
+footer .huddle .two-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .huddle .two-section .huddle-inner{
+    width: 25rem;
+    color: #fff;    
+}
+
+footer .huddle .two-section .huddle-inner .margin{
+    margin-top: 1.5rem;
+    line-height: 1.8;
+}
+
+footer .huddle .two-section .huddle-inner .info{
+    display: flex;
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+footer .huddle .two-section .huddle-inner .info img{
+    margin-right: 1rem;
+}
+
+footer .huddle .two-section .newsletter{
+    width: 32.5rem;
+    color: #fff;
+}
+
+footer .huddle .two-section .newsletter h1{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+footer .huddle .two-section .newsletter p{
+    margin-right: 8rem;
+    line-height: 1.8;
+    margin-top: 1.5rem;
+}
+
+footer .huddle .two-section .newsletter form{
+    margin-top: 2rem;
+}
+
+footer .huddle .two-section .newsletter form input{
+    width: 320px;
+    height: 48px;
+    margin-right: 34px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+footer .huddle .two-section .newsletter form button{
+    width: 160px;
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--pink);
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700
+}
+
+footer .huddle .social{
+    margin-top: 5rem;
+    display: flex;
+}
+
+.instagram{
+    cursor: pointer;
+}
+
+footer .huddle .social .myart{
+    background-color: #fff;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+footer .huddle .social .myart i{
+    color: var(--very-dark-cyan);
+    font-size: 1.8rem;
+    margin-left: auto;
+    margin-right: 2px;
+}
+
+footer .huddle .social .myart:last-child i{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+footer .huddle .social i{
+    font-size: 2rem;
+    margin-right: 25px;
+    color: #fff;
+    transition: all .2s ease-in;
+}
+
+footer .huddle .social .myart:hover{
+    background-color: #1DA1F2;
+}
+
+footer .huddle .social .instagram i:hover{
+    color: #1DA1F2;
+}
+@media(min-width:1160px) and ( max-width:1440px){
+    header .container .container-inner .text h1 {
+        font-size: 2.43rem;
+    }
+    header .container .container-inner .text p {
+        margin: 0 6rem;
+        margin-bottom: 4rem;
+    }
+    main .container .card .card-inner{
+        padding: 4rem 5rem;
+    }
+    
+}
+
+@media(min-width:992px) and ( max-width:1160px){
+    header .container .container-inner .text h1 {
+        font-size: 2.43rem;
+    }
+    header .container .container-inner .text p {
+        margin: 0 6rem;
+        margin-bottom: 4rem;
+    }
+    main .container .card .card-inner{
+        padding: 4rem 2.5rem;
+    }
+    main .container .card:nth-child(2) .card-inner img{
+        width: 420px;
+    }
+    footer .huddle .two-section{
+        flex-direction: column-reverse;
+    }
+    footer .huddle .two-section .newsletter{
+        margin-bottom: 3rem;
+    }
+}
+@media(max-width:991px){
+    html{
+        font-size: 10px;
+    }
+    header .padding{
+        padding: 2.5rem;
+    }
+    header .padding  nav img{
+        height: 23.22px;
+    }
+    header .padding  nav .button{
+        width: 80px;
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+        text-align: center;
+    }
+    header .container .container-inner{
+        padding: 10rem 0 0 0;
+    }
+    header .container .container-inner .text {
+        margin-bottom: 10.5rem;
+    }
+    header .container .container-inner .text h1 {
+        font-size: 2.3rem;
+        margin-bottom: 2rem;
+    }
+    header .container .container-inner .text p{
+        margin: 0;
+        margin-bottom: 5.5rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    header .container .container-inner .main-foto{
+        padding: 0;
+        margin-bottom: 12.5rem;
+    }
+    header .container .container-inner .web-info{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    header .container .container-inner .web-info .info:first-child{
+        margin-bottom: 10rem;
+    }
+    header .container .container-inner .web-info .info:last-child h1{
+        font-size: 5.1rem;
+    }
+    header .container .container-inner .web-info .info img{
+        height: 3rem;
+    }
+    .bg-bottom,.bg-top,.bg-footer{
+        display: none;
+    }
+    .bg-bottom-mobile,.bg-top-mobile,.bg-footer-mobile{
+        display: block;
+    }
+    main .container {
+        margin-bottom: 20rem;
+    }
+    main .container .card .card-inner,main .container .card:nth-child(2) .card-inner {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 3.5rem 5rem;
+    }
+    main .container .card .card-inner img{
+        width: 100%;
+        margin-bottom: 8rem;
+        margin-top: 4rem;
+    }
+    main .container .card .card-inner .text{
+        width: 100%;
+    }
+    main .container .card .card-inner .text h1{
+        font-size: 2rem;
+    }
+    main .container .card .card-inner .text p{
+        font-size: 1.2rem;
+        margin: 0 ;
+        margin-bottom: 3rem;
+    }
+    footer p{
+        font-size: 1.2rem;
+    }
+    footer .huddle{
+        padding: 6rem 2.75rem;
+        margin-top: -0.5rem;
+    }
+    footer .huddle .two-section .newsletter{
+        margin-bottom: 3rem;
+    }
+    footer .huddle .two-section{
+        flex-direction: column-reverse;
+    }
+    footer .huddle .two-section .newsletter h1{
+        font-size: 2.5rem;
+    }
+    footer .huddle .two-section .newsletter p{
+        font-size: 1.2rem;
+        margin-right: 6rem;
+    }
+    footer .huddle .two-section .newsletter form {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .huddle .two-section .newsletter form input{
+        width: 32rem;
+        margin-bottom: 1.4rem;
+        margin-right: 0;
+    }
+    footer .huddle .two-section .newsletter form button{
+        margin-left: auto;
+        display: block;
+        font-size: 1.4rem;
+    }
+    footer .huddle .two-section .huddle-inner img{
+        height: 3rem;
+    }
+    footer .huddle .two-section .huddle-inner .info img{
+        height: 1.8rem;
+    }
+    footer .huddle .social .myart{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    footer .huddle .social .instagram i{
+        font-size: 2.5rem;
+    }
+    .checker .combination .invalid-feedback{
+        font-size: 1.2rem;
+    }
+}
+footer .huddle .two-section .newsletter form .invalid{
+    border: 2px solid var(--light-red);
+    margin-bottom: 0.5rem;
+}
+.invalid-feedback{
+    color: var(--light-red);
+    font-size: .8rem;
+}
+.checker{
+    display: flex;
+}
+.combination{
+    width: 20rem;
+    margin-right: 2rem;
+}
+
